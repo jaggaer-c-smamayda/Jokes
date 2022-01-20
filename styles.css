@@ -1,0 +1,39 @@
+*{  
+    box-sizing: border-box;
+    position: relative;
+   
+}
+/* Set additional styling options for the columns*/
+.column  {
+    float: left;
+    width: 50%;
+    height: 350px;
+    display: block;
+    padding: 10px;
+    text-align: center;
+
+}
+button{
+    background-color: rgb(188, 188, 196);
+    border-radius: .3rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);  
+}
+p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); 
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
