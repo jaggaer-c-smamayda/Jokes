@@ -17,10 +17,20 @@ button{
     background-color: rgb(188, 188, 196);
     border-radius: .3rem;
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);  
+}
+h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size:1rem;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); 
+
+
 }
 p{
     position: absolute;
