@@ -16,6 +16,10 @@ document.getElementById( 'jokeBtn' ).addEventListener('click', ()=>{
 
               //})
             }
+            else {
+              let node=document.getElementById( 'j1' );
+              if( node )node.innerHTML= 'ValueNo should <==600 Thanks';
+            }
            })
     }
  
