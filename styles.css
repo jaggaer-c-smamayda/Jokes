@@ -1,6 +1,7 @@
 *{  
     box-sizing: border-box;
     position: relative;
+
    
 }
 /* Set additional styling options for the columns*/
@@ -8,42 +9,31 @@
     float: left;
     width: 50%;
     height: 350px;
-    display: block;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
-
+}
+#inputId{
+    top:10%;
+    background-color:green;
+    border-radius:5px;
+    align-items: center;
+    left:20%;
+    right:50%;
+    transform: translate(-50%, -50%);
 }
 button{
-    background-color: rgb(188, 188, 196);
-    border-radius: .3rem;
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);  
-}
-h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-size:1rem;
-    margin-right: -50%;
-    transform: translate(-50%, -50%); 
-
-
+    background-color: #9595b8;
+    border-radius: 5.3px; 
+    top: 30%;   
+    
 }
 p{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%); 
+    align-items: center;
+    top: 40%;
     font-size: 1rem;
-    font-weight: bolder;
 }
-
 .row:after {
-content: "";
 display: table;
 clear: both;
 }
@@ -51,5 +41,12 @@ clear: both;
     /* For mobile phones: */
     .row, .column {
       width: 100%;
+    }
+    #inputId{
+        top:20%;
+        align-items: center;
+        left:30%;
+        right:50%;
+        transform: translate(-50%, -50%);
     }
   }
