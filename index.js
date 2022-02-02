@@ -1,24 +1,23 @@
+//let use pure promises sytax without AWAIT..
 // Attached an event handler to the button
-document.getElementById( 'jokeBtn' ).addEventListener('click', ()=>{
-    // Fetching the API.
+document.getElementById( 'jokeBtn' ).addEventListener('click',()=>{
     if(document.getElementById('inputId').value){
-       // console.log(document.getElementById('inputId').value);
-        var inputNumber = document.getElementById('inputId').value;
-        //console.log(inputNumber);
+        const inputNumber = document.getElementById('inputId').value;
+        // Fetching the API.
         fetch ( 'https://api.icndb.com/jokes/'+ inputNumber)
+        // restore response that returns a promise
         .then( res => res.json() )
+        //store data in form of json
         .then( json => {
             if( json.type==='success' ){
-                //console.log(json.value);
-                //json.value.forEach( ( obj, i)=>{
+
                 let node=document.getElementById( 'j1' );
                 if( node )node.innerHTML=json.value.joke;
-
-              //})
             }
+            //Notes to the clients about the no.needed to fetch jokes
             else {
               let node=document.getElementById( 'j1' );
-              if( node )node.innerHTML= 'ValueNo should <==600 Thanks';
+              if( node )node.innerHTML= 'ValueNo should <=600 Thanks';
             }
            })
     }
@@ -29,10 +28,10 @@ document.getElementById( 'jokeBtn' ).addEventListener('click', ()=>{
       // Fetching the joke from value in JSON.
     .then( json => {
         if( json.type==='success' ){
-          json.value.forEach( ( obj, i )=>{
+          json.value.forEach( ( obj,i )=>{
             let node=document.getElementById( 'j' + ( i + 2 ) );
             if( node )node.innerHTML=obj.joke;
           })
         }
        })
-  })
+  });

@@ -1,22 +1,18 @@
 *{  
     box-sizing: border-box;
     position: relative;
-
-   
 }
 /* Set additional styling options for the columns*/
 .column  {
     float: left;
     width: 50%;
     height: 350px;
-    padding: 20px;
     text-align: center;
 }
 #inputId{
     top:10%;
     background-color:green;
     border-radius:5px;
-    align-items: center;
     left:20%;
     right:50%;
     transform: translate(-50%, -50%);
@@ -24,14 +20,15 @@
 button{
     background-color: #9595b8;
     border-radius: 5.3px; 
-    top: 30%;   
-    
+    right:14%;
+    top: 25%;     
 }
-p{
+p{  
+/*===here element is relative to its parents but layout around is changed===*/
     position: absolute;
-    align-items: center;
     top: 40%;
     font-size: 1rem;
+    padding: 20px 20px;
 }
 .row:after {
 display: table;
@@ -43,9 +40,8 @@ clear: both;
       width: 100%;
     }
     #inputId{
-        top:20%;
         align-items: center;
-        left:30%;
+        left:40%;
         right:50%;
         transform: translate(-50%, -50%);
     }
