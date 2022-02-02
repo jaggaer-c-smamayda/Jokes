@@ -10,7 +10,6 @@ document.getElementById( 'jokeBtn' ).addEventListener('click',()=>{
         //store data in form of json
         .then( json => {
             if( json.type==='success' ){
-
                 let node=document.getElementById( 'j1' );
                 if( node )node.innerHTML=json.value.joke;
             }
@@ -21,8 +20,7 @@ document.getElementById( 'jokeBtn' ).addEventListener('click',()=>{
             }
            })
     }
- 
-    fetch ( 'https://api.icndb.com/jokes/random/3' )
+    fetch ('https://api.icndb.com/jokes/random/3')
       // Grabbing the information from the JSON file.
     .then( res => res.json() )
       // Fetching the joke from value in JSON.
