@@ -1,49 +1,43 @@
 /*==I started with The asterisk (*) Becoz,it can be used to select 
  any and all types of elements in an HTML page==*/
 *{  
-    box-sizing: border-box;
-    position: relative;
+    
+    position:relative;
 }
 /*=======I used Unit measurement of 
     pixel(px) and percentage(%)===*/
 .column  {
     float: left;
-    width: 50%;
-    height: 350px;
+    width: 50%; 
+    height: 350px; 
     text-align: center;
+    align-items: center;
+    
 }
 #inputId{
     top:10%;
     background-color:green;
     border-radius:5px;
-    left:20%;
-    right:50%;
-    transform: translate(-50%, -50%);
 }
 button{
     background-color: #9595b8;
     border-radius: 5px; 
-    right:14%;
-    top: 25%;     
+    top: 13%;     
 }
 p{  
 /*===here element is relative to its parents but
      layout around is changed===*/
-    position: absolute;
     top: 40%;
     font-size: 15px;
     padding: 20px;
+}
+#j1{
+    top:25%;
 }
 
 @media only screen and (max-width:500px) {
     /* For mobile phones: */
     .row, .column {
       width: 100%;
-    }
-    #inputId{
-        align-items: center;
-        left:40%;
-        right:50%;
-        transform: translate(-50%, -50%);
     }
   }
